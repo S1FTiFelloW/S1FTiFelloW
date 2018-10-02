@@ -1,8 +1,55 @@
-#grad1 {
-    height: 200px;
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+h1,h2{
+  text-align:center;
+}
+h1{
+  color:rgba(100, 50, 255, .8);
+}
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 3s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+
+body{
+  background-image: url(http://fjordstudio.dk/assets/img/bg/diamonds.png);
+}
+.mainPic{
+text-align: center; /* Выравнивание по центру */ 
 }
