@@ -1,8 +1,86 @@
+.leftBlock,.midlBlock{
+  float: left;
+  width: 35%;
+}
+h1,h2{
+  text-align:center;
+}
+h1{
+  color:rgba(100, 50, 255, .8);
+}
+A {
+  color: red; /* Цвет ссылок */
+}
+A:visited {
+  color: #FF4500; /* Цвет посещенных ссылок */
+}
+A:active {
+  color: #FFFF00; /* Цвет активных ссылок */
+}
+.labs{
+  color: orange;
+  line-height: 2;
+}
+.rainbow {
+ /* Chrome, Safari, Opera */
+ -webkit-animation: rainbow 3s infinite; 
+
+ /* Internet Explorer */
+ -ms-animation: rainbow 3s infinite;
+
+ /* Standar Syntax */
+ animation: rainbow 3s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  100%{color: blue;}
+  100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  100%{color: blue;}
+  100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  100%{color: blue;}
+  100%{color: orange;}
+}
+
+body{
+  background-image: url(diamonds.png);
+}
+
+.mainPic{
+  text-align: center; /* Выравнивание по центру */
+}
+
+.widget {
+  padding: 20px 30px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
 * {box-sizing: border-box; margin: 0;}
 .widget-title {
   text-transform: uppercase;
   letter-spacing: 2px;
-  /*color: #222;*/
   color: #FFA500;
   font-size: 16px;
   padding-left: 15px;
@@ -28,70 +106,6 @@
   transition: .3s linear;
 }
 .widget-list a:hover {color: #b99d61;}
-
-h1,h2{
-  text-align:center;
-}
-h1{
-  color:rgba(100, 50, 255, .8);
-}
-.rainbow {
-   /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 3s infinite; 
-  
-  /* Internet Explorer */
-  -ms-animation: rainbow 3s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 3s infinite; 
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	100%{color: blue;}
-	100%{color: orange;}	
-}
-/* Internet Explorer */
-@-ms-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	100%{color: blue;}
-	100%{color: orange;}	
-}
-
-/* Standar Syntax */
-@keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	100%{color: blue;}
-	100%{color: orange;}
-}
-
-body{
-  background-image: url(http://fjordstudio.dk/assets/img/bg/diamonds.png);
-}
-.headWidg{
-}
-.leftBlock,.midlBlock{
-float: left;
-width: 35%;
-}
-.widget {
-  padding: 20px 30px;
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-}
-.mainPic{
-text-align: center; /* Выравнивание по центру */
+.bogoBtn{
+  margin-top: 80px;
 }

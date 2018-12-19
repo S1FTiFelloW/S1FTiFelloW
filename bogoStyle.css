@@ -1,0 +1,46 @@
+#graph.graph{
+  border: 1px solid #FFA500;
+  padding: 5px;
+}
+#graph .item{
+  margin: 2px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  padding: 3px;
+  border-radius: 3px;  
+  background-color: #00508C;
+  box-shadow: 0 0 1px #2280AC;
+}
+#graph.vertical{
+ height: 310px;
+ width: 900px;
+ padding-bottom: 10px;
+}
+#graph.vertical .item{
+  width: 20px;  
+  float: left;
+  display: inline-block;
+}
+.leftPanel,.midPanel{
+  float: left;
+  width: 35%;
+}
+.leftPanel{
+  margin-top: 100px;
+  color: #FFA500;
+}
+.midPanel{
+  text-align:center;
+  color: #FFA500;
+}
+body{
+  background-image: url(diamonds.png);
+}
+h1{
+  color:rgba(100, 50, 255, .8);
+}
+.mainText{
+  font-size: 24px;
+  color: orange;
+  line-height: 1;
+}

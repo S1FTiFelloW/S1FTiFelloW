@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bogo sort</title>
+	<link href="bogoStyle.css" rel="stylesheet">
+</head>
+<body>
+	<div class="leftPanel">
+		<label for="Name">Ваше имя:</label>
+		<br>
+		<input type="text" class="form-control" id="Name" required>
+		<br>
+		<button class="btn sort" onclick="main()">Запустить сортировку</button>
+	</div>
+	<div class="midPanel">
+		<img src="monkey.png" width="350" height="350" border="0" alt="photo">
+		<h1>Сортировка обезьяны</h1>
+		<div class="mainText">
+			Является очень неэффективным алгоритмом сортировки. 
+			<br>
+			Её используют только в образовательных целях, противопоставляя другим, более реалистичным алгоритмам. Если bogosort использовать для сортировки колоды карт, то сначала в алгоритме нужно проверить, лежат ли все карты по порядку, и если не лежат, то случайным образом перемешать её, проверить лежат ли теперь все карты по порядку, и повторять процесс, пока не отсортируется колода.
+			<br>
+			В данном примере на выполнение подаётся 28 элементов, конца сортировки возможно мы не увидим никогда.
+		</div>
+		<div id="graph" class="graph vertical">
+			<div class="item" name="elem" style="height:224px; margin-top: 86px">224</div>
+			<div class="item" name="elem" style="height:39px; margin-top: 271px">39</div>
+			<div class="item" name="elem" style="height:113px; margin-top: 197px">113</div>
+			<div class="item" name="elem" style="height:227px; margin-top: 83px">227</div>
+			<div class="item" name="elem" style="height:204px; margin-top: 106px">204</div>
+			<div class="item" name="elem" style="height:48px; margin-top: 262px">48</div>
+			<div class="item" name="elem" style="height:238px; margin-top: 72px">238</div>
+			<div class="item" name="elem" style="height:141px; margin-top: 169px">141</div>
+			<div class="item" name="elem" style="height:126px; margin-top: 184px">126</div>
+			<div class="item" name="elem" style="height:199px; margin-top: 111px">199</div>
+			<div class="item" name="elem" style="height:179px; margin-top: 131px">179</div>
+			<div class="item" name="elem" style="height:252px; margin-top: 58px">252</div>
+			<div class="item" name="elem" style="height:9px; margin-top: 301px">9</div>
+			<div class="item" name="elem" style="height:200px; margin-top: 110px">200</div>
+			<div class="item" name="elem" style="height:20px; margin-top: 290px">20</div>
+			<div class="item" name="elem" style="height:95px; margin-top: 215px">95</div>
+			<div class="item" name="elem" style="height:268px; margin-top: 42px">268</div>
+			<div class="item" name="elem" style="height:58px; margin-top: 252px">58</div>
+			<div class="item" name="elem" style="height:152px; margin-top: 158px">152</div>
+			<div class="item" name="elem" style="height:131px; margin-top: 179px">131</div>
+			<div class="item" name="elem" style="height:41px; margin-top: 269px">41</div>
+			<div class="item" name="elem" style="height:5px; margin-top: 305px">5</div>
+			<div class="item" name="elem" style="height:286px; margin-top: 24px">286</div>
+			<div class="item" name="elem" style="height:60px; margin-top: 250px">60</div>
+			<div class="item" name="elem" style="height:145px; margin-top: 165px">145</div>
+			<div class="item" name="elem" style="height:16px; margin-top: 294px">16</div>
+			<div class="item" name="elem" style="height:144px; margin-top: 166px">144</div>
+			<div class="item" name="elem" style="height:276px; margin-top: 34px">276</div>
+		</div>
+	</div>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+    <script src="bogo.js"></script>
+</body>
+</html>
