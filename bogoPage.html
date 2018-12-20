@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="bogo.js"></script>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
 	<title>Bogo sort</title>
 	<link href="bogoStyle.css" rel="stylesheet">
 </head>
@@ -10,7 +14,7 @@
 		<br>
 		<input type="text" class="form-control" id="Name" required>
 		<br>
-		<button class="btn sort" onclick="main()">Запустить сортировку</button>
+		<button class="btn sort" id="sortBtn" onclick="mainSort()">Запустить сортировку</button>
 	</div>
 	<div class="midPanel">
 		<img src="monkey.png" width="350" height="350" border="0" alt="photo">
@@ -53,8 +57,5 @@
 			<div class="item" name="elem" style="height:276px; margin-top: 34px">276</div>
 		</div>
 	</div>
-	<script src="jquery-3.2.1.min.js"></script>
-	<script src="main.js"></script>
-    <script src="bogo.js"></script>
 </body>
 </html>

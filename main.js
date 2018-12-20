@@ -1,8 +1,18 @@
-function main()
+function mainSort()
 {
 	var data = document.getElementsByName('elem');
+	var res = [];
+	
+	for (index = 0; index < data.length; ++index) {
+		res[index] = Number(data[index].textContent);
+	}
 
-    alert(data[0].value);
-	bogo = new Bogo("bogo.js");
-	var result = bogo.bogosort = function(e);
+	var result = bogosort(res);
+
+	var resultStr = "";
+	for (index = 0; index < result.length; ++index) {
+		resultStr = resultStr + " " + result[index];
+	}
+
+	alert("Результат: " + resultStr);
 }
