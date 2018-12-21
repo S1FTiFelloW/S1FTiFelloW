@@ -26,5 +26,12 @@ function mainSort()
 		resultStr = resultStr + " " + result[index];
 	}
 
+	var XML = new XMLWriter();
+	XML.BeginNode("Foo");
+    XML.WriteString("Hello World");
+    XML.EndNode();
+    XML.Close();
+    XML.ToString();
+
 	alert(resultStr);
 }
